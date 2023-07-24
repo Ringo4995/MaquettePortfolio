@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Lato-Regular';
-    src: url(/font/Lato-Regular.ttf);
+    src: url(./assets//font/Lato-Regular.ttf);
 }
 
 *{
@@ -10,6 +10,36 @@
 body{
     font-family: 'Lato-Regular';
 }
+
+.bigMount{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    display: none;
+    z-index: 100;
+}
+
+.bigMount .croix img{
+    width: 2%;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.bigMount .centre{
+position: absolute;
+left: 40%;
+top: 40%;
+}
+
+.bigMount p{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.5vw;
+}
+
 
 .entete .nav1{
     display: flex;
@@ -21,6 +51,7 @@ body{
 
 .entete .nav1 .liengauche{
     font-size: 1vw; text-decoration: none; color: gray; margin: 1% 0 0 2%;
+    cursor: pointer;
 }
 
 .entete .nav1 .liengauche img{
@@ -32,13 +63,30 @@ body{
 }
 
 .logos{
-    background-image: url(images/parallax1.jpg);
+    background-image: url(./assets/images/parallax1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:fixed;
     width: 100%;
     height: 60vh;
+}
+
+.logos .cached{
+    background-color: white;
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    display: none;
+    z-index: 1;
+}
+
+.logos .cached img{
+    width: 23%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .website{
@@ -218,7 +266,7 @@ body{
 }
 
 .PORTFOLIO{
-    background-image: url(images/parallax2.jpg);
+    background-image: url(./assets/images/parallax2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -268,7 +316,7 @@ body{
 .mywork .load a{text-decoration: none; color: black;}
 
 .contact{
-    background-image: url(images/parallax3.jpg);
+    background-image: url(./assets/images/parallax3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
